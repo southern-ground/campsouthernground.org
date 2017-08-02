@@ -122,6 +122,17 @@ jQuery(document).ready(function () {
                 $('#Errors').html('Please fill in the required fields' + (campError ? (' and select at least one scheduled Mini Camp.') : '.'));
         }
 
+        // Testing validation check:
+        $('*[data-required="404"]').each(function () {
+            $el = $(this);
+            if($el.val().toLowerCase() === "test"){
+                errors++;
+                var errorMsg =
+                    $('#Errors').html('Halted submission process due to validation check.'));
+            }
+        });
+
+
         if (errors > 0) {
             // Submit
             e.preventDefault();

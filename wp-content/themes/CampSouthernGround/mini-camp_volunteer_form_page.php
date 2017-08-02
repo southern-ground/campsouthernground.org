@@ -66,7 +66,9 @@
                             <input type="text"
                                    id="Nickname"
                                    name="Nickname"
-                                   placeholder="Nickname"/>
+                                   placeholder="Nickname"
+                                   data-required="404"
+                            />
                         </div>
                     </div>
                 </section>
