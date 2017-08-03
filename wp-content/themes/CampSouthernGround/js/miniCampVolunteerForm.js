@@ -128,7 +128,7 @@ jQuery(document).ready(function () {
             if($el.val().toLowerCase() === "test"){
                 errors++;
                 var errorMsg =
-                    $('#Errors').html('Halted submission process due to validation check.'));
+                    $('#Errors').html('Halted submission process due to validation check. Total errors: ' + errors);
             }
         });
 
