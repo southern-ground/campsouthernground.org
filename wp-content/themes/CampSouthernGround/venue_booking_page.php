@@ -341,6 +341,10 @@
 
                     <section>
                         <h3>Rentals</h3>
+                        <!--
+
+                        Removed per Jessica's request; 8/23/17. -f.
+
                         <label>Do you need to rent one of our two six-seater golf carts for the event?</label>
                         <div class="radioPair clearfix">
                             <div class="radioButtonContainer">
@@ -378,8 +382,9 @@
                                 <label for="RentalNo" class="check"></label>
                             </div>
                         </div>
+                        -->
                         <div class="optionalContent">
-                            <label>Check additional items you are interested in renting:</label>
+                            <label>Available items:</label>
                             <ul class="formGroup checkGroup flowLeft">
                                 <li>
                                     <input type="checkbox"
