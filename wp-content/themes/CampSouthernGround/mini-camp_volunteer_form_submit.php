@@ -65,6 +65,7 @@ function getPlainText($message = "")
         "Applicant's Employer: " . $_POST['Additional_Questions_Employer'] . "\r\n\r\n" .
         "DIGITAL SIGNATURES\r\n" .
         "---\r\n" .
+        "Over 18: " . ( isset($_POST['Over_Eighteen']) ? "Yes" : "No" ) . "\r\n" .
         "Release Liability Agreed to: " . ( isset($_POST['Agree_One']) ? "Yes" : "No" ) . "\r\n" .
         "Authorization Agreed to: " . ( isset($_POST['Agree_Two']) ? "Yes" : "No" ) . "\r\n" .
         "---\r\n\r\n";
@@ -138,6 +139,7 @@ function getHTMLText($message)
         "</div>\r\n" .
         "<div>\r\n" .
         "<h2>Digital Signatures:</h2>\r\n" .
+        "<strong>Over 18:</strong> \t" . ( isset($_POST['Over_Eighteen']) ? "Yes" : "No" ) . "<br />\r\n" .
         "<strong>Release Liability Agreed to:</strong> \t" . ( isset($_POST['Agree_One']) ? "Yes" : "No" ) . "<br />\r\n" .
         "<strong>Authorization Agreed to:</strong> \t" . ( isset($_POST['Agree_Two']) ? "Yes" : "No" ) . "\r\n" .
         "<hr />\r\n\r\n";

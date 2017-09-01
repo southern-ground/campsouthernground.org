@@ -158,6 +158,15 @@
                         height: auto;
                     }
 
+                    .patronForm #Errors{
+                        font-weight: bold;
+                        color: red;
+                    }
+
+                    .patronForm #Errors.show{
+                        margin: 40px 0 0 0;
+                    }
+
                     @media only screen and (max-width:900px){
                         #VolunteerHeader .volunteer-header{
                             flex-direction: column;
@@ -756,6 +765,21 @@
                                        name="Additional_Questions_Employer"/>
                             </div>
                         </div>
+
+                        <div class="formGroup">
+                            <div style="display:block;position: relative;margin: 0 0 20px;">
+                                <input type="checkbox"
+                                       id="Over_Eighteen"
+                                       name="Over_Eighteen"
+                                       value="Over 18"
+                                       data-required="5">
+                                <label for="Over_Eighteen"
+                                       class="checkboxLabel"></label>
+                                <label for="Over_Eighteen"
+                                       class="inputLabel">I am over the age of 18.</label>
+                            </div>
+                        </div>
+
                     </section>
                     <section>
                         <h2>
@@ -792,14 +816,7 @@
                         </div>
 
                         <p>
-                            <strong>AUTHORIZATION:</strong> I give my authorization to representatives of Camp Southern
-                            Ground, Inc. to
-                            verify the information in this application which may include contacting my references and
-                            the
-                            appropriate government agencies. All prospective volunteers of Camp Southern Ground, Inc.
-                            will
-                            undergo a Universal Background Screening before commencing volunteer activities with the
-                            organization.
+                            <strong>AUTHORIZATION:</strong> I give my authorization to representatives of Camp Southern Ground, Inc. to verify the information in this application which may include contacting my references and the appropriate government agencies. All prospective volunteers of Camp Southern Ground, Inc. will undergo a Universal Background Screening before commencing volunteer activities with the organization.
                         </p>
 
                         <div style="display:block;position: relative;margin: 0 0 20px;">
@@ -815,11 +832,11 @@
                         </div>
                     </section>
 
+                    <div id="Errors"></div>
+
                     <input type="submit" value="Submit Request"/>
 
-                    <div id="Errors">
-
-                    </div>
+                    <p style="font-size:1.25em;"><strong>Please note:</strong> Unfortunately we are unable to offer overnight accommodations to volunteers.</p>
 
                 </form>
 

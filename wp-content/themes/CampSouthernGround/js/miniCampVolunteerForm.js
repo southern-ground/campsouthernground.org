@@ -134,11 +134,14 @@ jQuery(document).ready(function () {
 
 
         if (errors > 0) {
+            $('#Errors').addClass('show');
             // Submit
             e.preventDefault();
             e.stopPropagation();
             void(0);
             return false;
+        }else{
+            $('#Errors').removeClass('show');
         }
 
     });
