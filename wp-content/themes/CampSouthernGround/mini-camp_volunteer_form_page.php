@@ -772,7 +772,7 @@
                                        id="Over_Eighteen"
                                        name="Over_Eighteen"
                                        value="Over 18"
-                                       data-required="5">
+                                       data-required="7">
                                 <label for="Over_Eighteen"
                                        class="checkboxLabel"></label>
                                 <label for="Over_Eighteen"

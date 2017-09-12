@@ -43,6 +43,9 @@ jQuery(document).ready(function () {
 
     $('#MiniCampVolunteerForm').on('submit', function (e) {
 
+        $('.checkboxLabel, *[data-required]').removeClass('error');
+
+
         var valid = true,
             errors = 0,
             $el,
@@ -90,20 +93,25 @@ jQuery(document).ready(function () {
             }
         });
 
-        var selected = 0;
+        var campSelected = 0;
 
         // Check that at least ONE of the checkboxes is selected:
         $('*[data-required="5"]').each(function () {
             $el = $(this);
             if ($el.prop('checked')) {
-                selected++;
+                campSelected++;
             }
         });
 
-        if (selected === 0) {
+        if (campSelected === 0) {
             errors++;
-            $('.checkboxLabel').addClass('error');
             campError = true;
+            $('*[data-required="5"]').each(function () {
+                $el = $(this);
+                if (!$el.prop('checked')) {
+                    $(this).parent().find('.checkboxLabel').addClass('error');
+                }
+            });
         }
 
         // Check that at least ONE of the checkboxes is selected:
@@ -114,6 +122,15 @@ jQuery(document).ready(function () {
                 $(this).parent().find('.checkboxLabel').addClass('error');
             }else{
                 $(this).parent().find('.checkboxLabel').removeClass('error');
+            }
+        });
+
+        // Check that at least ONE of the checkboxes is selected:
+        $('*[data-required="7"]').each(function () {
+            $el = $(this);
+            if (!$el.prop('checked')) {
+                errors++;
+                $(this).parent().find('.checkboxLabel').addClass('error');
             }
         });
 
