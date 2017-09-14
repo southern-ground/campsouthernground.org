@@ -79,10 +79,10 @@ function getEmailText($msg = "")
             "  \t" . UNCHECKED . " Axe Throwing\r\n" .
             "  \t" . UNCHECKED . " Facilitated team building activity with Atlanta Challenge\r\n") .
         "\r\n" .
-        "Cart Rentals:\r\n" .
+        /*"Cart Rentals:\r\n" .
         "-------------\r\n" .
         (((isset($_POST['Rental']) && $_POST['Rental'] === "No")) ? "N/A\r\n" : ($_POST['Rental'] . "\r\n")) .
-        "\r\n" .
+        "\r\n" .*/
         "Additional Rentals:\r\n" .
         "-------------------\r\n" .
         (isset($_POST['Add_Rental_Campfire']) ? CHECK : UNCHECKED) . " Campfire\r\n" .
@@ -154,9 +154,9 @@ function getEmailHTML($msg = "")
             "  \t" . UNCHECKED . " Axe Throwing<br />\r\n" .
             "  \t" . UNCHECKED . " Facilitated team building activity with Atlanta Challenge") .
         "</p></div>\r\n" .
-        "<div><h2>Cart Rentals:</h2>\r\n" .
+        /*"<div><h2>Cart Rentals:</h2>\r\n" .
         "<p>" . (((isset($_POST['Rental']) && $_POST['Rental'] === "No")) ? "N/A" : ($_POST['Rental'])) .
-        "</p></div>\r\n" .
+        "</p></div>\r\n" .*/
         "<div><h2>Additional Rentals:</h2>\r\n" .
         "<p>\r\n" .
         (isset($_POST['Add_Rental_Campfire']) ? CHECK : UNCHECKED) . " Campfire<br />\r\n" .
