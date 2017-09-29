@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Camp Southern Ground</title>
+    <!-- CDN: new.campsouthernground.org -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Page description. No longer than 155 characters."/>
     <!-- Twitter Card data -->
@@ -77,8 +78,8 @@
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
             a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
             a.async = 1;
@@ -110,7 +111,7 @@
             <a href="/">
                 <div class="header_shield"></div>
             </a>
-            <a href="https://secure.acceptiva.com/?cst=d95a40" target="_blank" class="donate_link">
+            <a href="./donate" target="_blank" class="donate_link">
                 <div class="decorative-bar"></div>
                 Click Here To
                 <br/>
