@@ -12,18 +12,26 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
 
-                    <img class="video_thumb" src="<?php echo get_stylesheet_directory_uri(); ?>/img/video_placeholder.png" />
+                    <img class="video_thumb"
+                         src="<?php echo get_stylesheet_directory_uri(); ?>/img/video_placeholder.png"/>
 
                     <!--<a href="Javascript:void(0);" class="video_clicker"><img class="video_thumb"
-                                                                             src="<?php /*echo get_stylesheet_directory_uri(); */?>/img/video_thumb.png"/></a>
+                                                                             src="<?php /*echo get_stylesheet_directory_uri(); */ ?>/img/video_thumb.png"/></a>
                     <iframe style="display:none;" src="" class="home_video" frameborder="0" webkitallowfullscreen
                             mozallowfullscreen allowfullscreen></iframe>-->
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <h2>A Note From Zac Brown</h2>
-                    <p>As a former camp counselor, I know how a positive camp experience can transform a child’s life.
-                        My dream is that children of all abilities will have an opportunity to experience the magic of
-                        the outdoors. Thank you for helping us create an amazing place for kids to learn and grow.</p>
+                    <p>
+                        As a former camp counselor and camper, I know how a positive camp experience can transform a
+                        child's life. My dream is that children of all abilities will have an opportunity to grow and
+                        learn from each other, while experiencing the magic of the outdoors. It is also important to me
+                        that we take care of the families that protect our freedoms and keep this country safe. Camp
+                        Southern Ground will be a haven for children of family members serving in the military, as well
+                        as be a respite for our active and veteran service members. Through our partnerships we'll be
+                        able to welcome military families to our camps year-round. Thank you for supporting our efforts
+                        and for helping us create an amazing place that is much more than the typical camp experience.
+                    </p>
                     <div class="zb_sig"></div>
                 </div>
             </div>
@@ -128,7 +136,7 @@
                 </div>
             </div>
 
-            <br clear="both" />
+            <br clear="both"/>
 
         </div><!-- .page_sidebar -->
 
@@ -144,9 +152,9 @@
                     <div class="col-xs-2 col-xs-full-width col-sm-pull-left col-md-1">
                         <div class="news_date">
                             <div
-                                class="news_date-month"><?php echo date("M", strtotime($post->post_date)); ?></div>
+                                    class="news_date-month"><?php echo date("M", strtotime($post->post_date)); ?></div>
                             <div
-                                class="news_date-day"><?php echo date("d", strtotime($post->post_date)); ?></div>
+                                    class="news_date-day"><?php echo date("d", strtotime($post->post_date)); ?></div>
                         </div>
                     </div>
                     <div class="col-xs-10 col-md-11">
