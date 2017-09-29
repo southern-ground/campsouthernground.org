@@ -2948,6 +2948,14 @@ ul.camp_list:last-of-type {
     overflow:hidden;
 }
 
+.video-container--bp-50{ 
+    padding-bottom:50%;
+}
+
+.video-container--bm-20{ 
+    margin-bottom: 20px;
+}
+
 .video-container iframe, .video-container object, .video-container embed {
     position:absolute;
     top:0;

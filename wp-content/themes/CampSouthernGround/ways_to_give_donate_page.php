@@ -30,7 +30,7 @@
                 <div class="col-xs-12 col-md-6 centered donation-type">
                     <p>Make a monetary donation online through Acceptiva.</p>
                     <br/>
-                    <a href="https://secure.acceptiva.com/?cst=d95a40" target="_blank"
+                    <a href="/donate" target="_blank"
                        class="btn btn-primary">Donate</a>
                 </div>
                 <div class="col-xs-12 col-md-6 centered donation-type">

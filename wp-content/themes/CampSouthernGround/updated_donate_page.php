@@ -25,21 +25,49 @@
                     <p><?php the_content(); ?></p>
             </div>
         </div>
-        <div class="page_content">
-
-            <div id="bbox-root" style="margin: 0 auto;width: 100%; max-width: 1024px;"></div>
-            <script type="text/javascript">
-                window.bboxInit = function () {
-                    bbox.showForm('edae27b5-38b7-47c8-aabd-86a576eb6195');
-                };
-                (function () {
-                    var e = document.createElement('script'); e.async = true;
-                    e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
-                    document.getElementsByTagName('head')[0].appendChild(e);
-                } ());
-            </script>
-
+        <div class="container">
+            <?php if (get_field('copy')): ?>
+                <div class="row">
+                    <div class="col-12">
+                        <?= the_field('copy') ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+            <div class="row page_content">
+                <div class="col-xs-12 col-sm-8 ">
+                    <div id="bbox-root" style="margin: 0 auto;width: 100%; max-width: 1024px;"></div>
+                    <script type="text/javascript">
+                        window.bboxInit = function () {
+                            bbox.showForm('<?= the_field('black_box_code') ?>');
+                        };
+                        (function () {
+                            var e = document.createElement('script');
+                            e.async = true;
+                            e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+                            document.getElementsByTagName('head')[0].appendChild(e);
+                        }());
+                    </script>
+                </div>
+                <div class="col-xs-12 col-sm-4 page_sidebar" style="padding:42px 0 0 0;">
+                    <!-- Sidebar Content -->
+                    <?PHP
+                    // check if the repeater field has rows of data
+                    if (have_rows('sidebar_content')):
+                        // loop through the rows of data
+                        while (have_rows('sidebar_content')) : the_row();
+                            // display a sub field value
+                            the_sub_field('sidebar_item');
+                        endwhile;
+                    else :
+                        ?>
+                        <!-- NO CONTENT -->
+                        <?PHP
+                    endif;
+                    ?>
+                </div>
+            </div>
         </div>
+
     <?php endwhile;
     else: ?>
         <p>Sorry, this page doesn't exist.</p>
